@@ -52,9 +52,3 @@ p, h1, h2, h3, h4, h5, h6, a {
     width: 100%;
     height: 100%;
 }
-
-#intro {
-    display: flex;
-    letter-spacing: 15px;
-    justify-content: center;
-}
