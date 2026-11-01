@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/menu.png">
     <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassicOS</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/menu.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#menuImage").click(function (e) {
@@ -49,12 +59,13 @@
 
             $(".os").append($iframe);
             $("#app-window").hide();
-            $("#app-window").fadeToggle();
+            $("#app-window").fadeIn();
         }
 
         function closeWindow() {
-            $("#app-window").fadeToggle();
-            $("#app-window").remove();
+            $("#app-window").fadeToggle(400, function() {
+                 $(this).remove();
+            });
         }
     </script>
 </head>
