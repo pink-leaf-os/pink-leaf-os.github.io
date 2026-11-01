@@ -31,6 +31,7 @@
 
             $(win.document.body).append($iframe);
         }
+
         function openPath(stringPath) {
             $("#app-window").remove();
 
@@ -50,6 +51,10 @@
             $("#app-window").hide();
             $("#app-window").fadeToggle();
         }
+        
+        function closeWindow() {
+            $("#app-window").remove();
+        }
     </script>
 </head>
 
@@ -60,6 +65,7 @@
             <button onclick="openPath('/chat');">Chat</button><br />
             <button onclick="openPath('/code');">Code Editor</button><br />
             <button onclick="openCloak();">Cloaker</button><br />
+            <button onclick="closeWindow();">Close Window</button><br />
         </div>
     </div>
     <div class="taskbar">
