@@ -32,15 +32,15 @@
             $(win.document.body).append($iframe);
         }
         function openChat() {
-            $("#1").remove();
+            $("#app-window").remove();
 
             let $iframe = $("<iframe>", {
                 src: "/chat",
-                id: "1",
+                id: "app-window",
                 css: {
                     width: "80%",
                     height: "70%",
-                    border: "black soild 10px",
+                    border: "black solid 10px",
                     margin: "auto",
                     display: "block"
                 }
@@ -49,15 +49,15 @@
             $(".os").append($iframe);
         }
         function openGames() {
-            $("#1").remove();
+            $("#app-window").remove();
 
             let $iframe = $("<iframe>", {
                 src: "/games",
-                id: "1",
+                id: "app-window",
                 css: {
                     width: "80%",
                     height: "70%",
-                    border: "black soild 10px",
+                    border: "black solid 10px",
                     margin: "auto",
                     display: "block"
                 }
@@ -66,15 +66,15 @@
             $(".os").append($iframe);
         }
         function openCode() {
-            $("#1").remove();
+            $("#app-window").remove();
 
             let $iframe = $("<iframe>", {
                 src: "/code",
-                id: "1",
+                id: "app-window",
                 css: {
                     width: "80%",
                     height: "70%",
-                    border: "black soild 10px",
+                    border: "black solid 10px",
                     margin: "auto",
                     display: "block"
                 }
