@@ -31,11 +31,11 @@
 
             $(win.document.body).append($iframe);
         }
-        function openChat() {
+        function openPath(stringPath) {
             $("#app-window").remove();
 
             let $iframe = $("<iframe>", {
-                src: "/chat",
+                src: stringPath,
                 id: "app-window",
                 css: {
                     width: "80%",
@@ -47,40 +47,8 @@
             });
 
             $(".os").append($iframe);
-        }
-        function openGames() {
-            $("#app-window").remove();
-
-            let $iframe = $("<iframe>", {
-                src: "/games",
-                id: "app-window",
-                css: {
-                    width: "80%",
-                    height: "70%",
-                    border: "black solid 10px",
-                    margin: "auto",
-                    display: "block"
-                }
-            });
-
-            $(".os").append($iframe);
-        }
-        function openCode() {
-            $("#app-window").remove();
-
-            let $iframe = $("<iframe>", {
-                src: "/code",
-                id: "app-window",
-                css: {
-                    width: "80%",
-                    height: "70%",
-                    border: "black solid 10px",
-                    margin: "auto",
-                    display: "block"
-                }
-            });
-
-            $(".os").append($iframe);
+            $("#app-window").hide();
+            $("#app-window").fadeToggle();
         }
     </script>
 </head>
@@ -88,10 +56,10 @@
 <body>
     <div class="os">
         <div id="windowMenu">
-            <button onclick="openGames();">Games</button><br />
-            <button onclick="openChat();">Chat</button><br />
+            <button onclick="openPath('/games');">Games</button><br />
+            <button onclick="openPath('/chat');">Chat</button><br />
+            <button onclick="openPath('/code');">Code Editor</button><br />
             <button onclick="openCloak();">Cloaker</button><br />
-            <button onclick="openCode();">Code Editor</button><br />
         </div>
     </div>
     <div class="taskbar">
