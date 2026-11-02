@@ -17,7 +17,7 @@ async function unzipWebpFromDataUri(dataUri) {
     const blobUrls = {};
 
    
-    const base64 = dataUri.split(',')[1];
+    const base32 = dataUri.split(',')[1];
     const binaryString = atob(base64);
     const len = binaryString.length;
     const bytes = new Uint8Array(len);

@@ -67,11 +67,7 @@
             $("#app-window").fadeIn();
         }
 
-        function closeWindow() {
-            $("#app-window").fadeToggle(400, function() {
-                 $(this).remove();
-            });
-        }
+       
     </script>
 </head>
 
@@ -80,9 +76,8 @@
         <div id="windowMenu">
             <button onclick="openPath('/games');">Games</button><br />
             <button onclick="openPath('/chat');">Chat</button><br />
-            <button onclick="openPath('/code');">Code Editor</button><br />
-            <button onclick="openCloak();">Cloaker</button><br />
-            <button onclick="closeWindow();">Close Window</button><br />
+  
+           
         </div>
     </div>
     <div class="taskbar">
