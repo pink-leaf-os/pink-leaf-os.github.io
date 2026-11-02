@@ -35,19 +35,32 @@
         function openPath(stringPath) {
             $("#app-window").remove();
 
-            let $iframe = $("<iframe>", {
-                src: stringPath,
+            let borderWindow = $("<div>", {
                 id: "app-window",
                 css: {
-                    width: "80%",
-                    height: "70%",
-                    border: "black solid 10px",
+                    width: "100%",
+                    height: "100%",
+                    margin: "0",
+                    padding: "0"
+                }
+            })
+
+            let iframe = $("<iframe>", {
+                src: stringPath,
+                id: "display-window",
+                css: {
+                    width: "calc(100% - 40px)",
+                    height: "calc(100% - 100px)",
+                    border: "#99B4D1 solid 20px",
+                    margin: "0",
+                    padding: "0",
                     margin: "auto",
                     display: "block"
                 }
             });
 
-            $(".os").append($iframe);
+            $(".os").append(borderWindow);
+            $("#app-window").append(iframe);
             $("#app-window").hide();
             $("#app-window").fadeIn();
         }
