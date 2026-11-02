@@ -5,30 +5,7 @@ body {
     background-color: #5c6f81;
 }
 
-.os {
-    display: flex;
-    background-image: url("/assets/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-}
-
-p, h1, h2, h3, h4, h5, h6, a {
-    color: #ffffff;
-}
-
-.taskbar {
-    position: fixed;
-    width: 100vw;
-    height: 40px;
-    bottom: 0;
-    padding: 10px 16px;
-    background: #38434d;
-}
-
-#menuImage {
+enuImage {
     width: 45px;
     height: 45px;
 }
@@ -46,7 +23,7 @@ p, h1, h2, h3, h4, h5, h6, a {
 #windowMenu button {
     box-sizing: border-box;
     width: 100%;
-    height: 20%;
+    height: 999%;
 }
 
 #chat {
